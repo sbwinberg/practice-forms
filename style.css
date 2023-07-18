@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Norse;
+    src: url(./Norse-Bold.otf) format("opentype");
+}
+
+*:focus {
+    outline: none;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#header {
+    align-items:center;
+    justify-content: space-between;
+    float: left;
+    font-family: "Norse";
+    height: 100vh;
+    max-width: 500px;
+    background-image: url("./leaves.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#banner {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    margin-top: 30%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 100px;
+}
+
+.logo {
+    height: 90%;
+}
+
+.cred {
+    font-size: small;
+    font-family: sans-serif;
+    color: white;
+    margin: auto auto 2%;
+}
+
+span {
+    text-decoration: underline; 
+}
+
+#form-bg {
+    background-color: rgb(245, 245, 245);
+    height: 100vh;
+    float: right;
+    justify-content: center;
+}
+
+#form {
+    background-color: #fff;
+    height: 25%;
+    border-bottom: 4px black;
+}
+
+button {
+    color: white;
+    box-shadow: none;
+    background-color: #596D48;
+    border: none;
+    padding: 10px 48px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 2px 3px rgb(231, 231, 231);
+    margin-bottom: 10px;
+}
+
+legend {
+    margin: 16px auto 16px 32px;
+    font-size:x-large;
+    font-weight: bold;
+}
+
+input, label {
+    font-size: small;
+    display: block;
+}
+
+.left {
+    float: left;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+input {
+    margin-bottom: 16px;
+    width: 200px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 1.5em;
+}
+
+fieldset {
+    padding: 0;
+    border: none;
+}
+
+input[type*=] {
+    width: 1000px;
+}
+
+.upper {
+    margin-left: 32px;
+    margin-bottom: 64px;
+}
+
+.lower {
+    margin-left: 32px;
+    margin-top: 32px;
+}
+
+.upper p {
+    font-size: larger;
+    font-weight: bold;
+    padding-right: 20%;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+}
+input:focus {
+    border :1px solid rgb(67, 67, 255);
+    box-shadow: 2px 3px rgb(231, 231, 231);
+}
+
+input:not(:focus):invalid {
+    border: 1px solid rgb(252, 79, 79);
+}
